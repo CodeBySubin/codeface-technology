@@ -14,9 +14,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => locator<SplashCubit>()..initialize(),
-      child: BlocListener<SplashCubit, SplashState>(
+    return  BlocListener<SplashCubit, SplashState>(
         listener: (context, state) {
           state.maybeWhen(
             loaded: () => context.go(AppRoutes.map),
@@ -26,7 +24,6 @@ class SplashScreen extends StatelessWidget {
         child: Scaffold(
           backgroundColor: AppColors.primary,
           body: Center(child: SvgPicture.asset(AppIcons.logo)),
-        ),
       ),
     );
   }

@@ -1,4 +1,4 @@
-import 'package:codeface/features/map/domain/map_enity.dart';
+import 'package:codeface/features/map/domain/entity/map_enity.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'map_state.freezed.dart';

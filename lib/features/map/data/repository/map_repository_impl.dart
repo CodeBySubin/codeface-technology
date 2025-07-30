@@ -1,8 +1,8 @@
 import 'package:codeface/core/network/api_client.dart';
 import 'package:codeface/core/network/api_endpoint.dart';
-import 'package:codeface/features/map/data/map_model.dart';
-import 'package:codeface/features/map/domain/map_enity.dart';
-import 'package:codeface/features/map/domain/repository.dart';
+import 'package:codeface/features/map/data/model/map_model.dart';
+import 'package:codeface/features/map/domain/entity/map_enity.dart';
+import 'package:codeface/features/map/domain/repository/repository.dart';
 
 class MapRepositoryImpl implements MapRepository {
   final ApiClient apiClient;
